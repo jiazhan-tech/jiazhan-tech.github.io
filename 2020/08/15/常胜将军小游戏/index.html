@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <!-- Html Head Tag-->
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="John Doe">
+  <!-- Open Graph Data -->
+  <meta property="og:title" content="常胜将军小游戏"/>
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="Hexo"/>
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="http://yoursite.com"/>
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+
+  <!-- Site Title -->
+  <title>Hexo</title>
+
+  <!-- Bootstrap CSS -->
+  
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+
+  <!-- Custom CSS -->
+  
+  
+<link rel="stylesheet" href="/css/style.light.css">
+
+
+  <!-- Google Analytics -->
+  
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+  <body>
+    <!-- Page Header -->
+
+
+<header class="site-header header-background" style="background-image: url(/img/default-banner-dark.jpg)">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="page-title with-background-image">
+          <p class="title">常胜将军小游戏</p>
+          <p class="subtitle"></p>
+        </div>
+        <div class="site-menu with-background-image">
+          <ul>
+            
+              <li>
+                <a href="/">
+                  
+                  Home
+                  
+                </a>
+              </li>
+            
+              <li>
+                <a href="/archives">
+                  
+                  Archives
+                  
+                </a>
+              </li>
+            
+              <li>
+                <a href="https://github.com/<your-github-username>" target="_blank" rel="noopener">
+                  
+                  Github
+                  
+                </a>
+              </li>
+            
+              <li>
+                <a href="mailto:<your-email-address>">
+                  
+                  Email
+                  
+                </a>
+              </li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<article>
+  <div class="container typo">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="post-info text-muted">
+          
+            <!-- Author -->
+            <span class="author info">By John Doe</span>
+          
+          <!-- Date -->
+          <span class="date-time info">On
+            <span class="date">2020-08-15</span>
+            <span class="time">10:11:40</span>
+          </span>
+          
+        </div>
+        <!-- Tags -->
+        
+        <!-- Post Main Content -->
+        <div class="post-content">
+          <p>一、常胜将军游戏的基本内容和要求<br>甲和乙两个人玩抽取火柴的游戏，共有21根火柴。每个人每次最多抽取4根火柴，最少取1根火柴。如果一个人取到最后一根火柴则输了。甲让乙先抽取，结果每次都是甲赢。这是为什么呢？<br>二、常胜将军算法<br>先来分析一下常胜将军问题。甲要每次都赢，那么每次甲给乙只剩下一根火柴，因此词实乙至少取一根火柴，这样才能够保证甲常胜。由于乙先抽取，因此只要保证甲抽取的数量和乙抽取的数量之和为5即可。<br>可以按照这个思路来编写相应的常胜将军问题的求解算法，示例代码如下：<br>int computer,user,last;</p>
+<p>void jiangjun()            //常胜将军算法<br>{<br>    while(1)<br>    {<br>        printf(“ 目前还有火柴 %d 根 \n”,last);<br>        printf(“用户去火柴数量：”);<br>        scanf(“%d”,&amp;user);            //用户去火柴数量<br>        if(user&lt;1||user&gt;4||user&gt;last)<br>        {<br>            printf(“你违规了，你取的火柴数有问题！\n”);<br>            continue;<br>         }<br>         last=last-user;<br>         if(last==0)<br>         {<br>             printf(“\n用户取了最后一根火柴，因此计算机赢了！\n”);<br>             break;<br>         }<br>         else<br>         {<br>             computer=5-user;<br>             last=last-computer;<br>             printf(“计算机取火柴数量：%d \n”,computer);<br>             if(last==0)<br>             {<br>                 printf(“\n 计算机取了最后一根火柴，用户赢了！\n”);<br>                 break;<br>             }<br>         }<br>     }<br>}<br>这里，每次抽取都判断一下是否违规，并且计算剩余的火柴数量last。第一次由用户输入，然后计算机根据前面的算法思路来抽取，这样可以保证每次计算机都赢。<br>二、具体求解过程<br>有了上述通用的常胜将军问题算法后，我们可以求解任意此类问题。这里将给出完整的常胜将军问题求解程序代码：<br>#include&lt;stdio.h&gt;</p>
+<p>int computer,user,last;</p>
+<p>int jiangjun()            //常胜将军算法<br>{<br>    while(1)<br>    {<br>        printf(“ 目前还有火柴 %d 根 \n”,last);<br>        printf(“用户去火柴数量：”);<br>        scanf(“%d”,&amp;user);            //用户去火柴数量<br>        if(user&lt;1||user&gt;4||user&gt;last)<br>        {<br>            printf(“你违规了，你取的火柴数有问题！\n”);<br>            continue;<br>         }<br>         last=last-user;            //剩余火柴数量<br>         if(last==0)<br>         {<br>             printf(“\n用户取了最后一根火柴，因此计算机赢了！\n”);<br>             break;<br>         }<br>         else<br>         {<br>             computer=5-user;            //计算机取的火柴数量<br>             last=last-computer;<br>             printf(“计算机取火柴数量：%d \n”,computer);<br>             if(last==0)<br>             {<br>                 printf(“\n 计算机取了最后一根火柴，用户赢了！\n”);<br>                 break;<br>             }<br>         }<br>     }<br>}<br>int main()            //主函数<br>{<br>    int num;<br>    printf(“常胜将军问题求解！\n”);<br>    printf(“请先输入火柴的总数量为：”);<br>    scanf(“%d”,&amp;num);            //火柴的总量<br>    printf(“火柴的总数量为%d: “,num);<br>    last=num;<br>    int jiangjun(num);            //求解<br>}</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+
+
+
+    <!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <p class="copyright text-muted">
+          Theme By <a target="_blank" href="https://github.com/levblanc">Levblanc.</a>
+          Inspired By <a target="_blank" href="https://github.com/klugjo/hexo-theme-clean-blog">Clean Blog.</a>
+        <p class="copyright text-muted">
+          Powered By <a target="_blank" href="https://hexo.io/">Hexo.</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <!-- After Footer Scripts -->
+
+<script src="/js/highlight.pack.js"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function(event) {
+    var codeBlocks = Array.prototype.slice.call(document.getElementsByTagName('pre'))
+    codeBlocks.forEach(function(block, index) {
+      hljs.highlightBlock(block);
+    });
+  });
+</script>
+
+  </body>
+</html>
+
