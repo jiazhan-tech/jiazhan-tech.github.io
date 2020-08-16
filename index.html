@@ -1,264 +1,678 @@
 <!DOCTYPE html>
 <html>
-  <!-- Html Head Tag-->
-  <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
-  <meta name="author" content="John Doe">
-  <!-- Open Graph Data -->
-  <meta property="og:title" content="Hexo"/>
-  <meta property="og:description" content="" />
-  <meta property="og:site_name" content="Hexo"/>
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="http://yoursite.com"/>
+<head>
+  <meta charset="utf-8">
   
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-
-  <!-- Site Title -->
   <title>Hexo</title>
-
-  <!-- Bootstrap CSS -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
   
-<link rel="stylesheet" href="/css/bootstrap.min.css">
-
-  <!-- Custom CSS -->
+    <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
   
-<link rel="stylesheet" href="/css/style.light.css">
-
-
-  <!-- Google Analytics -->
+    <link rel="icon" href="/img/favicon.png">
   
+  
+      
+<link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
 
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  
+    
+    
+  
+  
+      <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  
+  <!-- 加载特效 -->
+    <script src="/js/pace.js"></script>
+    <link href="/css/pace/pace-theme-flash.css" rel="stylesheet" />
+  <script>
+      var yiliaConfig = {
+          rootUrl: '/',
+          fancybox: true,
+          animate: true,
+          isHome: true,
+          isPost: false,
+          isArchive: false,
+          isTag: false,
+          isCategory: false,
+          open_in_new: false
+      }
+  </script>
 <meta name="generator" content="Hexo 4.2.1"></head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+    <header id="header" class="inner">
+        <a href="/" class="profilepic">
+            
+            <img lazy-src="/img/head.jpg" class="js-avatar">
+            
+        </a>
 
-  <body>
-    <!-- Page Header -->
+        <hgroup>
+          <h1 class="header-author"><a href="/" title="Hi Mate">John Doe</a></h1>
+        </hgroup>
 
+        
+        
+        
+            <div id="switch-btn" class="switch-btn">
+                <div class="icon">
+                    <div class="icon-ctn">
+                        <div class="icon-wrap icon-house" data-idx="0">
+                            <div class="birdhouse"></div>
+                            <div class="birdhouse_holes"></div>
+                        </div>
+                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
+                            <div class="ribbon"></div>
+                        </div>
+                        
+                        <div class="icon-wrap icon-link hide" data-idx="2">
+                            <div class="loopback_l"></div>
+                            <div class="loopback_r"></div>
+                        </div>
+                        
+                        
+                        <div class="icon-wrap icon-me hide" data-idx="3">
+                            <div class="user"></div>
+                            <div class="shoulder"></div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="tips-box hide">
+                    <div class="tips-arrow"></div>
+                    <ul class="tips-inner">
+                        <li>菜单</li>
+                        <li>标签</li>
+                        
+                        <li>友情链接</li>
+                        
+                        
+                        <li>关于我</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
 
-<header class="site-header header-background" style="background-image: url(/img/default-banner-dark.jpg)">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        <div class="page-title with-background-image">
-          <p class="title">Hexo</p>
-          <p class="subtitle"></p>
+        <div id="switch-area" class="switch-area">
+            <div class="switch-wrap">
+                <section class="switch-part switch-part1">
+                    <nav class="header-menu">
+                        <ul>
+                        
+                            <li><a href="/Home">博客首页</a></li>
+                        
+                            <li><a href="/works">作品展示</a></li>
+                        
+                            <li><a href="/about">留言打卡</a></li>
+                        
+                            <li><a href="/FrontEndGuide">前端导航</a></li>
+                        
+                        </ul>
+                    </nav>
+                    <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fl mail" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=PAkNDgsKBQ4MCnxNTRJfU1E" title="mail">mail</a>
+                            
+                                <a class="fl github" target="_blank" href="https://github.com/luuman" title="github">github</a>
+                            
+                                <a class="fl zhihu" target="_blank" href="#" title="zhihu">zhihu</a>
+                            
+                                <a class="fl weibo" target="_blank" href="#" title="weibo">weibo</a>
+                            
+                                <a class="fl google" target="_blank" href="#" title="google">google</a>
+                            
+                                <a class="fl twitter" target="_blank" href="#" title="twitter">twitter</a>
+                            
+                                <a class="fl linkedin" target="_blank" href="#" title="linkedin">linkedin</a>
+                            
+                        </ul>
+                    </nav>
+                </section>
+                
+                
+                <section class="switch-part switch-part2">
+                    <div class="widget tagcloud" id="js-tagcloud">
+                        <a href="/tags/%E6%96%B0%E4%BA%BA%E6%8A%A5%E5%88%B0/" style="font-size: 10px;">新人报到</a>
+                    </div>
+                </section>
+                
+                
+                
+                <section class="switch-part switch-part3">
+                    <div id="js-friends">
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://luuman.github.io/">name</a>
+                    
+                    </div>
+                </section>
+                
+
+                
+                
+                <section class="switch-part switch-part4">
+                
+                    <div id="js-aboutme">纯海迷、爱运动、爱交友、爱旅行、喜欢接触新鲜事物、迎接新的挑战，更爱游离于错综复杂的编码与逻辑中</div>
+                </section>
+                
+            </div>
         </div>
-        <div class="site-menu with-background-image">
-          <ul>
-            
-              <li>
-                <a href="/">
-                  
-                  Home
-                  
-                </a>
-              </li>
-            
-              <li>
-                <a href="/archives">
-                  
-                  Archives
-                  
-                </a>
-              </li>
-            
-              <li>
-                <a href="https://github.com/<your-github-username>" target="_blank" rel="noopener">
-                  
-                  Github
-                  
-                </a>
-              </li>
-            
-              <li>
-                <a href="mailto:<your-email-address>">
-                  
-                  Email
-                  
-                </a>
-              </li>
-            
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</header>
-
-<!-- Home Page Post List -->
-<div class="container">
-  <div class="row">
-    <div class="col-lg-10 col-md-10 col-md-offset-1">
-      
-        <div class="post-item-wrapper">
-  <a href="/2020/08/15/%E5%B8%B8%E8%83%9C%E5%B0%86%E5%86%9B%E5%B0%8F%E6%B8%B8%E6%88%8F/" class="post-title">
-      常胜将军小游戏
-  </a>
-  <div class="post-excerpt">
-    <!-- Post Date and Categories -->
-    <div class="date-and-category">
-      <div class="date">2020-08-15</div>
-      <div class="categories">
-        
-          Uncategorized
-        
-      </div>
-    </div>
-    <!-- Post Excerpt -->
-    <div class="excerpt typo">No Post Excerpt</div>
-    <!-- Post Tags -->
-    <div class="tags">
-      
-        <div class="untagged">Untagged</div>
-      
-    </div>
-  </div>
+    </header>                
 </div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+      <div class="overlay">
+          <div class="slider-trigger"></div>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="Me">John Doe</a></h1>
+      </div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+                
+                    <img lazy-src="/img/head.jpg" class="js-avatar">
+                
+            </a>
+            <hgroup>
+              <h1 class="header-author"><a href="/" title="Me">John Doe</a></h1>
+            </hgroup>
+            
+            <nav class="header-menu">
+                <ul>
+                
+                    <li><a href="/Home">博客首页</a></li>
+                
+                    <li><a href="/works">作品展示</a></li>
+                
+                    <li><a href="/about">留言打卡</a></li>
+                
+                    <li><a href="/FrontEndGuide">前端导航</a></li>
+                
+                <div class="clearfix"></div>
+                </ul>
+            </nav>
+            <nav class="header-nav">
+                <div class="social">
+                    
+                        <a class="mail" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=PAkNDgsKBQ4MCnxNTRJfU1E" title="mail">mail</a>
+                    
+                        <a class="github" target="_blank" href="https://github.com/luuman" title="github">github</a>
+                    
+                        <a class="zhihu" target="_blank" href="#" title="zhihu">zhihu</a>
+                    
+                        <a class="weibo" target="_blank" href="#" title="weibo">weibo</a>
+                    
+                        <a class="google" target="_blank" href="#" title="google">google</a>
+                    
+                        <a class="twitter" target="_blank" href="#" title="twitter">twitter</a>
+                    
+                        <a class="linkedin" target="_blank" href="#" title="linkedin">linkedin</a>
+                    
+                </div>
+            </nav>
+        </header>                
+    </div>
+</nav>
+      <div class="body-wrap">
+  
+    <article id="post-搭建博客的总结和收获" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2020/08/15/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%80%BB%E7%BB%93%E5%92%8C%E6%94%B6%E8%8E%B7/" class="article-date">
+      <time datetime="2020-08-15T05:25:56.000Z" itemprop="datePublished">2020-08-15</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/08/15/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%80%BB%E7%BB%93%E5%92%8C%E6%94%B6%E8%8E%B7/">搭建博客的总结和收获</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        
+      
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
 
       
-        <div class="post-item-wrapper">
-  <a href="/2020/07/27/%E7%AE%97%E6%B3%95%E6%A6%82%E8%BF%B0/" class="post-title">
-      算法概述
-  </a>
-  <div class="post-excerpt">
-    <!-- Post Date and Categories -->
-    <div class="date-and-category">
-      <div class="date">2020-07-27</div>
-      <div class="categories">
-        
-          Uncategorized
-        
-      </div>
-    </div>
-    <!-- Post Excerpt -->
-    <div class="excerpt typo">No Post Excerpt</div>
-    <!-- Post Tags -->
-    <div class="tags">
       
-        <div class="untagged">Untagged</div>
-      
+      <div class="clearfix"></div>
     </div>
+    
   </div>
-</div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-常胜将军小游戏" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2020/08/15/%E5%B8%B8%E8%83%9C%E5%B0%86%E5%86%9B%E5%B0%8F%E6%B8%B8%E6%88%8F/" class="article-date">
+      <time datetime="2020-08-15T00:28:33.000Z" itemprop="datePublished">2020-08-15</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/08/15/%E5%B8%B8%E8%83%9C%E5%B0%86%E5%86%9B%E5%B0%8F%E6%B8%B8%E6%88%8F/">常胜将军小游戏</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p>一、常胜将军游戏的基本内容和要求<br>甲和乙两个人玩抽取火柴的游戏，共有21根火柴。每个人每次最多抽取4根火柴，最少取1根火柴。如果一个人取到最后一根火柴则输了。甲让乙先抽取，结果每次都是甲赢。这是为什么呢？<br>二、常胜将军算法<br>先来分析一下常胜将军问题。甲要每次都赢，那么每次甲给乙只剩下一根火柴，因此词实乙至少取一根火柴，这样才能够保证甲常胜。由于乙先抽取，因此只要保证甲抽取的数量和乙抽取的数量之和为5即可。<br>可以按照这个思路来编写相应的常胜将军问题的求解算法，示例代码如下：<br>int computer,user,last;</p>
+<p>void jiangjun()            //常胜将军算法<br>{<br>    while(1)<br>    {<br>        printf(“ 目前还有火柴 %d 根 \n”,last);<br>        printf(“用户去火柴数量：”);<br>        scanf(“%d”,&amp;user);            //用户去火柴数量<br>        if(user&lt;1||user&gt;4||user&gt;last)<br>        {<br>            printf(“你违规了，你取的火柴数有问题！\n”);<br>            continue;<br>         }<br>         last=last-user;<br>         if(last==0)<br>         {<br>             printf(“\n用户取了最后一根火柴，因此计算机赢了！\n”);<br>             break;<br>         }<br>         else<br>         {<br>             computer=5-user;<br>             last=last-computer;<br>             printf(“计算机取火柴数量：%d \n”,computer);<br>             if(last==0)<br>             {<br>                 printf(“\n 计算机取了最后一根火柴，用户赢了！\n”);<br>                 break;<br>             }<br>         }<br>     }<br>}<br>这里，每次抽取都判断一下是否违规，并且计算剩余的火柴数量last。第一次由用户输入，然后计算机根据前面的算法思路来抽取，这样可以保证每次计算机都赢。<br>二、具体求解过程<br>有了上述通用的常胜将军问题算法后，我们可以求解任意此类问题。这里将给出完整的常胜将军问题求解程序代码：<br>#include&lt;stdio.h&gt;</p>
+<p>int computer,user,last;</p>
+<p>int jiangjun()            //常胜将军算法<br>{<br>    while(1)<br>    {<br>        printf(“ 目前还有火柴 %d 根 \n”,last);<br>        printf(“用户去火柴数量：”);<br>        scanf(“%d”,&amp;user);            //用户去火柴数量<br>        if(user&lt;1||user&gt;4||user&gt;last)<br>        {<br>            printf(“你违规了，你取的火柴数有问题！\n”);<br>            continue;<br>         }<br>         last=last-user;            //剩余火柴数量<br>         if(last==0)<br>         {<br>             printf(“\n用户取了最后一根火柴，因此计算机赢了！\n”);<br>             break;<br>         }<br>         else<br>         {<br>             computer=5-user;            //计算机取的火柴数量<br>             last=last-computer;<br>             printf(“计算机取火柴数量：%d \n”,computer);<br>             if(last==0)<br>             {<br>                 printf(“\n 计算机取了最后一根火柴，用户赢了！\n”);<br>                 break;<br>             }<br>         }<br>     }<br>}<br>int main()            //主函数<br>{<br>    int num;<br>    printf(“常胜将军问题求解！\n”);<br>    printf(“请先输入火柴的总数量为：”);<br>    scanf(“%d”,&amp;num);            //火柴的总量<br>    printf(“火柴的总数量为%d: “,num);<br>    last=num;<br>    int jiangjun(num);            //求解<br>}</p>
 
       
-        <div class="post-item-wrapper">
-  <a href="/2020/06/28/%E5%A4%A7%E5%AE%B6%E5%A5%BD/" class="post-title">
-      大家好
-  </a>
-  <div class="post-excerpt">
-    <!-- Post Date and Categories -->
-    <div class="date-and-category">
-      <div class="date">2020-06-28</div>
-      <div class="categories">
-        
-          Uncategorized
-        
-      </div>
+      
     </div>
-    <!-- Post Excerpt -->
-    <div class="excerpt typo"><p>大家好，我是新来的1900710330谭家展。<br>以下内容为复制粘贴：<br>layout: 页面布局（配合主题文档使用）<br>title: 文章名称<br>date: 文章日期<br>comments: 文章是否开启评论<br>photos: 文章封面图（仅部分主题支持）<br>tags: </p>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-算法概述" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2020/07/27/%E7%AE%97%E6%B3%95%E6%A6%82%E8%BF%B0/" class="article-date">
+      <time datetime="2020-07-27T01:41:29.000Z" itemprop="datePublished">2020-07-27</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/07/27/%E7%AE%97%E6%B3%95%E6%A6%82%E8%BF%B0/">算法概述</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p>一、什么是算法<br>算法是解决实际问题的一种精确描述方法，算法是对特定问题的的求解步骤的一种精确描述方法。其实，我们可以通俗的理解，算法就是一个完整的解题步骤，由一些基本的运算和规定的运算顺序构成。从计算机程序设计的角度看，算法是由一系列求解问题的指令构成，能够根据规范的输入在有限时间内获得有限的输出结果。<br>二、算法的五个特征<br>（1）有穷性<br>算法的指令或者步骤的执行次数是有限的，执行时间也是有限的。<br>（2）确切性<br>算法的每一条指令或者步骤都必须有明确的定义和描述。<br>（3）输入<br>一个算法应该有相应的输入条件，用来刻画运算对象的初始情况。<br>（4）输出<br>一个算法应该有明确的输出结果。<br>（5）可行性<br>算法的执行步骤必须是可行的，且可以在有限时间内完成。其实，无法执行的步骤是没有意义的，它解决不了任何实际问题。<br>三、算法的分类<br>（1）按照应用来分类<br>按照算法的应用领域，算法可以分为基本算法、数据结构相关的算法、几何算法、图论算法、规划算法，数值分析算法、加密/解密算法、排序算法、并行算法和数论算法等。<br>（2）按照确定性来分类<br>按照算法结果的确定性来分类，可以分为确定性算法和非确定性算法。<br>确定性算法：这类算法在有限时间内完成计算，得到的结果是唯一的，且经常取决于输入值。<br>非确定性算法：这类算法在有限时间内完成计算，但是得到的结果往往不是唯一的，也就是存在多值性。<br>（3）按照算法的思路来分类<br>按照算法的思路来分类，算法可以分为递推算法、递归算法、穷举算法、贪婪算法、分治算法和迭代算法等。<br>四、算法相关概念的区别<br>（1）算法与公式的关系<br>公式也是解决某类问题，有特定的输入和输出结果，并且公式都是完全可以操作并进行计算的，但算法绝不完全等于公式。只能够说是，公式是算法的一种，算法的形式可以比公式复杂得多，所解决的问题更为广泛。<br>（2）算法与程序的关系<br>程序设计语言是算法实现的一种形式，就是工具。我们需要先熟悉某一程序设计语言的语法格式，才能使用这种程序语言编写合适的算法，实现程序的运行。学习一门程序设计语言是比较容易的，难的是如何正确合理的运用算法来编写代码求解问题。<br>（3）算法与数据结构的关系<br>首先说明，数据结构是数据的组织形式，可以用来表征特定的对象数据。计算机科学家尼克劳斯·沃思曾提出一个著名的公式：数据结构+算法=程序。学习了程序设计语言之后你可以将这个公式拓展：数据结构+算法+程序设计语言=程序。数据结构往往表示的是处理的对象，算法是计算和处理数据的核心方法，程序设计语言是算法的实现方式。需要注意的是：算法是解决问题的一个抽象方法和步骤，同一个算法在不同的语言具有不同的实现形式，这依赖于数据结构的形式和程序设计语言的语法形式。<br>五、算法的表示<br>（1）自然语言表示<br>所谓的自然语言，就是自然地随文化演化的语言，例如：汉语、英语等。面对一些简单的问题，可以采用通过这种方法来解决问题，但复杂的问题用自然语言来表示将会不利于交流和发展。<br>（2）流程图表示<br>流程图最大的优点便是简单直观、便于理解，在计算机算法领域有着广泛的应用。流程图有三种结构：顺序结构、条件分支结构以及循环结构。<br>（3）N—S图表示<br>N-S图可以简单理解为是没有流程线的流程图，表示起来更为简洁。<br>（4）伪代码表示<br>伪代码是另外一种算法描述的方法，伪代码是介于自然语言与编程语言之间，虽然伪代码不能上机运行，但是程序员可以通过伪代码很容易理解算法的结构，从而编写程序。<br>六、算法性能的评价<br>一个算法优劣往往通过算法复杂度来衡量，算法复杂度包括时间复杂度和空间复杂度两个方面。<br>（1）时间复杂度，我们知道一个算法执行所耗费的时间，时间越短，算法越好。程序中语句越多，耗费的时间就越长，因为每一条语句都要执行。因此，简短、精悍的算法程序往往执行速度快。<br>（2）空间复杂度，空间复杂度指的是算法程序在计算机中执行所需要消耗的存储空间，其可分为两个方面：1.程序保存所需要的存储空间，也就是程序本身的大小。2.程序在执行过程中所需要消耗的存储空间资源，例如程序在执行过程中的中间变量。一般来说，程序的大小越小，执行过程中消耗的资源越少，这个程序就越好。<br>七、算法实例（查找数字）<br>#include&lt;stdio.h&gt;    //头文件<br>#include&lt;stdlib.h&gt;<br>#include&lt;time.h&gt;</p>
+<p>#define N 20</p>
+<p>int main()<br>{<br>    int arr[N],x,n,i;<br>    int f=-1;</p>
+<pre><code>srand(time(NULL));    //随机种子 
+for(i=0;i&lt;N;i++)
+{
+    arr[i]=rand()/100;
+}                    //产生数组 
+printf(&quot;输入要查找的数字：&quot;);
+scanf(&quot;%d&quot;,&amp;x);        //输入要查找的数 
+
+for(i=0;i&lt;N;i++)
+{
+    if(x==arr[i])    //找到数据 
+    {
+        f=i;
+        break;
+    }
+}
+
+printf(&quot;\n随机生成的数据序列：\n&quot;);
+for(i=0;i&lt;N;i++)
+{
+    printf(&quot;%d &quot;,arr[i]);    //输出序列 
+}
+printf(&quot;\n\n&quot;);
+
+if(f&lt;0)                        //输出查找结果 
+{
+    printf(&quot;没有找到数据:%d\n&quot;,x);
+}
+else
+{
+    printf(&quot;数据：%d 位于数组的第 %d 个元素.\n&quot;,x,f+1);
+}
+system(&quot;pause&quot;);
+return 0;</code></pre><p>}<br>在该程序中，main()函数生成20个随机数，然后用for语句和if语句进行顺序查找。当查找到该数据时，便退出查找，输出该数据的位置，否则输出没找到该数据。</p>
+
+      
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-大家好" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2020/06/28/%E5%A4%A7%E5%AE%B6%E5%A5%BD/" class="article-date">
+      <time datetime="2020-06-28T05:52:02.000Z" itemprop="datePublished">2020-06-28</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/06/28/%E5%A4%A7%E5%AE%B6%E5%A5%BD/">大家好</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+              <p>大家好，我是新来的1900710330谭家展。<br>以下内容为复制粘贴：<br>layout: 页面布局（配合主题文档使用）<br>title: 文章名称<br>date: 文章日期<br>comments: 文章是否开启评论<br>photos: 文章封面图（仅部分主题支持）<br>tags: </p>
 <ul>
 <li>文章标签一</li>
 <li>文章标签二<br>categories: 文章分类<br>description: 文章描述，即要在首页显示的摘要（仅部分主题支持）</li>
 </ul>
 <hr>
-<p>这里是摘要</p></div>
-    <!-- Post Tags -->
-    <div class="tags">
-      
-        
-
-<a class="tag" href="/tags/%E6%96%B0%E4%BA%BA%E6%8A%A5%E5%88%B0/">新人报到</a>
-
-
-      
-    </div>
-  </div>
-</div>
-
-      
-        <div class="post-item-wrapper">
-  <a href="/2020/06/26/hello-world/" class="post-title">
-      Hello World
-  </a>
-  <div class="post-excerpt">
-    <!-- Post Date and Categories -->
-    <div class="date-and-category">
-      <div class="date">2020-06-26</div>
-      <div class="categories">
-        
-          Uncategorized
-        
-      </div>
-    </div>
-    <!-- Post Excerpt -->
-    <div class="excerpt typo">No Post Excerpt</div>
-    <!-- Post Tags -->
-    <div class="tags">
-      
-        <div class="untagged">Untagged</div>
-      
-    </div>
-  </div>
-</div>
-
-      
-    </div>
-  </div>
-</div>
-
-<!-- Pagination -->
-<div class="container">
-  <div class="row">
-    <div class="col-lg-10 col-md-10 col-md-offset-1">
-      <ul class="pagination">
+<p>这里是摘要</p>
           
-          
-      </ul>
+      
+      
     </div>
-  </div>
-</div>
+    
+    <div class="article-info article-info-index">
+      
+      
 
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%96%B0%E4%BA%BA%E6%8A%A5%E5%88%B0/" rel="tag">新人报到</a></li></ul>
+    </div>
 
-
-    <!-- Footer -->
-<footer>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        <p class="copyright text-muted">
-          Theme By <a target="_blank" href="https://github.com/levblanc">Levblanc.</a>
-          Inspired By <a target="_blank" href="https://github.com/klugjo/hexo-theme-clean-blog">Clean Blog.</a>
-        <p class="copyright text-muted">
-          Powered By <a target="_blank" href="https://hexo.io/">Hexo.</a>
+      
+        <p class="article-more-link">
+          <a  href="/2020/06/28/%E5%A4%A7%E5%AE%B6%E5%A5%BD/#more">大航海 >></a>
         </p>
-      </div>
+      
+      <div class="clearfix"></div>
     </div>
+    
   </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2020/06/26/hello-world/" class="article-date">
+      <time datetime="2020-06-26T08:13:10.694Z" itemprop="datePublished">2020-06-26</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/06/26/hello-world/">Hello World</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+
+      
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+  
+</div>
+      <footer id="footer">
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                &copy; 2020 John Doe
+            </div>
+            <div class="footer-right">
+                <a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/luuman/hexo-theme-spfk" target="_blank">spfk</a> by luuman
+            </div>
+        </div>
+        
+            <div class="visit">
+                
+                    <span id="busuanzi_container_site_pv" style='display:none'>
+                        <span id="site-visit" >海贼到访数: 
+                            <span id="busuanzi_value_site_uv"></span>
+                        </span>
+                    </span>
+                
+                
+                    <span>, </span>
+                
+                
+                    <span id="busuanzi_container_page_pv" style='display:none'>
+                        <span id="page-visit">本页阅读量: 
+                            <span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    </span>
+                
+            </div>
+        
+    </div>
 </footer>
 
+    </div>
+    
+<script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
 
-    <!-- After Footer Scripts -->
 
-<script src="/js/highlight.pack.js"></script>
+<script src="/js/main.js"></script>
 
+
+    <script>
+        $(document).ready(function() {
+            var backgroundnum = 24;
+            var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+            $("#mobile-nav").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
+            $(".left-col").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
+        })
+    </script>
+
+
+
+
+
+<div class="scroll" id="scroll">
+    <a href="#"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer"><i class="fa fa-arrow-down"></i></a>
+</div>
 <script>
-  document.addEventListener("DOMContentLoaded", function(event) {
-    var codeBlocks = Array.prototype.slice.call(document.getElementsByTagName('pre'))
-    codeBlocks.forEach(function(block, index) {
-      hljs.highlightBlock(block);
-    });
-  });
+    $(document).ready(function() {
+        if ($("#comments").length < 1) {
+            $("#scroll > a:nth-child(2)").hide();
+        };
+    })
 </script>
 
-  </body>
-</html>
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
 
+  <script language="javascript">
+    $(function() {
+        $("a[title]").each(function() {
+            var a = $(this);
+            var title = a.attr('title');
+            if (title == undefined || title == "") return;
+            a.data('title', title).removeAttr('title').hover(
+
+            function() {
+                var offset = a.offset();
+                $("<div id=\"anchortitlecontainer\"></div>").appendTo($("body")).html(title).css({
+                    top: offset.top - a.outerHeight() - 15,
+                    left: offset.left + a.outerWidth()/2 + 1
+                }).fadeIn(function() {
+                    var pop = $(this);
+                    setTimeout(function() {
+                        pop.remove();
+                    }, pop.text().length * 800);
+                });
+            }, function() {
+                $("#anchortitlecontainer").remove();
+            });
+        });
+    });
+</script>
+
+
+  </div>
+</body>
+</html>
